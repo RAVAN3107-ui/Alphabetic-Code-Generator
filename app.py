@@ -1,7 +1,7 @@
 import sys
 
 try:
-    from gui.main_window import main
+    from gui.app import main
 except ImportError as e:
     print(f"Error: Could not import GUI module. Make sure PySide6 is installed.")
     print(f"Details: {e}")
