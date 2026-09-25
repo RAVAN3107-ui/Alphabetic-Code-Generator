@@ -14,4 +14,3 @@ htmlcov/
 build/
 dist/
 *.egg-info/
-*.spec

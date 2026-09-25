@@ -58,6 +58,23 @@ pip install -r requirements.txt
 python app.py
 ```
 
+## Download From GitHub
+
+For source code, use **Code > Download ZIP** on the GitHub repository. Extract it,
+install Python 3.11 or newer, and run:
+
+```bash
+python -m pip install -r requirements.txt
+python app.py
+```
+
+For Windows, download the latest `alphabetic-code-generator-windows` artifact
+from the repository's **Releases** page. Extract the ZIP and run the included
+`alphabetic-code-generator.exe`; Python is not required for that release build.
+
+To publish a Windows release, push a version tag such as `v1.0.0`. GitHub
+Actions will build the executable and attach it to the release automatically.
+
 ## Run tests
 
 ```bash
