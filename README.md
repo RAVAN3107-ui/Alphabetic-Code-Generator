@@ -11,6 +11,9 @@ A polished Python desktop application that converts normal text into a custom al
 - Full mapping reference table with filter/search
 - Help and notes section
 - Unsupported-character warnings instead of silent deletion
+- Morse encoding and decoding for letters, numbers, and common punctuation
+- ROT13 with case, punctuation, number, and whitespace preservation
+- Forward and reverse ROT13/Morse pipelines with in-memory backtracking
 - Dark, modern desktop UI with PySide6
 - Automated test coverage for conversion behavior
 
@@ -19,6 +22,9 @@ A polished Python desktop application that converts normal text into a custom al
 1. Character mode: converts each character individually.
 2. Word mode: converts each word independently.
 3. Sentence mode: splits by sentence boundaries and converts each sentence.
+4. Text -> Morse and Morse -> Text
+5. Text -> ROT13 and ROT13 -> Text
+6. Text -> ROT13 -> Morse and Morse -> ROT13 -> Text
 
 ## Mapping rules
 
