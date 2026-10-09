@@ -35,7 +35,7 @@ The mapping is stored in [mapping/code_mapping.py](mapping/code_mapping.py).
 ## Installation
 
 ```bash
-cd alphabetic-code-generator
+cd Alphabetic-Code-Generator
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
@@ -45,7 +45,7 @@ pip install -r requirements.txt
 On Windows PowerShell:
 
 ```powershell
-cd alphabetic-code-generator
+cd Alphabetic-Code-Generator
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 py -m pip install --upgrade pip
@@ -104,6 +104,8 @@ alphabetic-code-generator/
 ├── app.py
 ├── requirements.txt
 ├── README.md
+├── pytest.ini
+├── alphabetic-code-generator.spec
 ├── .gitignore
 ├── LICENSE
 ├── mapping/
@@ -115,9 +117,11 @@ alphabetic-code-generator/
 │   └── validator.py
 ├── gui/
 │   ├── __init__.py
+│   ├── app.py
 │   ├── main_window.py
 │   ├── mapping_view.py
-│   └── notes_view.py
+│   ├── notes_view.py
+│   └── styles.py
 ├── utils/
 │   ├── __init__.py
 │   └── clipboard.py
@@ -125,7 +129,8 @@ alphabetic-code-generator/
 │   └── test_converter.py
 └── .github/
     └── workflows/
-        └── python-tests.yml
+        ├── python-tests.yml
+        └── release.yml
 ```
 
 ## Unsupported characters
